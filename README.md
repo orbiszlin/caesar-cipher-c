@@ -50,7 +50,7 @@ int shift = 5; // o kolik budu posouvat písmeno
 
 // počítám s čísly A = 65 v ASCI, Z = 90
 // 90 - 65 - 5 + 26 => 46
-printf("%d\n", (ch - 'A' + shift + 26));
+printf("%d\n", (ch - 'A' - shift + 26));
 
 // % modulu použiji pro rotaci uvnitř A - Z, tedy 0 - 25 (pro jednodušší práci došlo k posnunu, bylo "- A", tedy "- 65")
 // % 26 je proto, že je 26 písmen, pozice 0-25
